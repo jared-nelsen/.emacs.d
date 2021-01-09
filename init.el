@@ -217,7 +217,7 @@
     ("85968e61ff2c490f687a8159295efb06dd05764ec37a5aef2c59abbd485f0ee4" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" default)))
  '(package-selected-packages
    (quote
-    (all-the-icons swiper elpy idle-highlight-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous darktooth-theme clojure-mode-extra-font-locking cider)))
+    (flycheck all-the-icons swiper elpy idle-highlight-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous darktooth-theme clojure-mode-extra-font-locking cider)))
  '(pdf-view-midnight-colors (quote ("#FDF4C1" . "#282828")))
  '(pos-tip-background-color "#36473A")
  '(pos-tip-foreground-color "#FFFFC8"))
