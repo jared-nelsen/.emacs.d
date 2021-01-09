@@ -83,8 +83,9 @@
 					 eldoc
 					 idle-highlight-mode
 					 treemacs
-           smartparens
+           			 smartparens
            			 magit
+					 flycheck
 					 use-package))
 
 ;; Install any missing packages
@@ -99,6 +100,7 @@
   :init
   (elpy-enable))
 
+(setq elpy-rpc-python-command "/usr/bin/python3")
 ;;----------------------------------------------------------------------------------------------------------
 ;; Add-in elisp files :
 ;;     Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able to load them. Loading elisp
