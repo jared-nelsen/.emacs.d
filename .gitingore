@@ -4,4 +4,4 @@
 # Except...
 !init.el
 !customizations/
-!elpa
+!elpa/
