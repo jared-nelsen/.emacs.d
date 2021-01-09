@@ -1,0 +1,10 @@
+# Ignore Everything
+*
+
+# Except...
+!init.el
+!customizations/
+!elpa/
+!.gitignore
+
+auto-save-list/

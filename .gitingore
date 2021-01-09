@@ -1,7 +1,0 @@
-# Ignore Everything
-*
-
-# Except...
-!init.el
-!customizations/
-!elpa/
