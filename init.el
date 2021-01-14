@@ -86,6 +86,7 @@
            			 smartparens
            			 magit
 					 flycheck
+                                         docker
 					 use-package))
 
 ;; Install any missing packages
@@ -93,14 +94,23 @@
   (unless (package-installed-p package)
     (package-install package)))
 
+;;---------------------------------------------------------------------------------------------------------
+;; Extra packages
+;;---------------------------------------------------------------------------------------------------------
+
+;; Docker
+(use-package docker
+  :ensure t
+  :bind ("C-c d" . docker))
+
 ;; elpy for Python
 (require 'use-package)
 (use-package elpy
   :ensure t
   :init
   (elpy-enable))
-
 (setq elpy-rpc-python-command "/usr/bin/python3")
+
 ;;----------------------------------------------------------------------------------------------------------
 ;; Add-in elisp files :
 ;;     Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able to load them. Loading elisp
@@ -212,15 +222,13 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
- '(cider-font-lock-dynamically (quote (macro function var deprecated core)))
+ '(cider-font-lock-dynamically '(macro function var deprecated core))
  '(coffee-tab-width 2)
  '(custom-safe-themes
-   (quote
-    ("85968e61ff2c490f687a8159295efb06dd05764ec37a5aef2c59abbd485f0ee4" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" default)))
+   '("85968e61ff2c490f687a8159295efb06dd05764ec37a5aef2c59abbd485f0ee4" "9e54a6ac0051987b4296e9276eecc5dfb67fdcd620191ee553f40a9b6d943e78" default))
  '(package-selected-packages
-   (quote
-    (flycheck all-the-icons swiper elpy idle-highlight-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous darktooth-theme clojure-mode-extra-font-locking cider)))
- '(pdf-view-midnight-colors (quote ("#FDF4C1" . "#282828")))
+   '(flycheck all-the-icons swiper elpy idle-highlight-mode tagedit smex rainbow-delimiters projectile paredit magit ido-ubiquitous darktooth-theme clojure-mode-extra-font-locking cider))
+ '(pdf-view-midnight-colors '("#FDF4C1" . "#282828"))
  '(pos-tip-background-color "#36473A")
  '(pos-tip-foreground-color "#FFFFC8"))
 (custom-set-faces
