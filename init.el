@@ -328,3 +328,19 @@
 ;; Font
 ;;----------------------------------------------------------------------------------------------------------
 (add-to-list 'default-frame-alist '(font . "JetBrains Mono-13"))
+
+;;----------------------------------------------------------------------------------------------------------
+;; Movement
+;;----------------------------------------------------------------------------------------------------------
+
+(global-set-key (kbd "<kp-1>") 'backward-char)
+(global-set-key (kbd "<kp-3>") 'forward-char)
+(global-set-key (kbd "<kp-4>") 'backward-word)
+(global-set-key (kbd "<kp-6>") 'forward-word)
+(global-set-key (kbd "<kp-7>") 'beginning-of-line)
+(global-set-key (kbd "<kp-9>") 'end-of-line)
+(global-set-key (kbd "<kp-8>") 'previous-line)
+(global-set-key (kbd "<kp-5>") 'next-line)
+(global-set-key (kbd "<kp-2>") 'ignore)
+(global-set-key (kbd "<kp-subtract>") 'scroll-down)
+(global-set-key (kbd "<kp-add>") 'scroll-up)
